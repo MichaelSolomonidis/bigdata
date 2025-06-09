@@ -4,7 +4,6 @@ from pyspark.sql.functions import col, count
 spark = SparkSession.builder.appName("Taxi Trips Same Borough").getOrCreate()
 sc = spark.sparkContext
 sc.setLogLevel("ERROR")
-
 username = "kkiousis"
 output_path = f"hdfs://hdfs-namenode:9000/user/{username}/Q3_Result"
 
