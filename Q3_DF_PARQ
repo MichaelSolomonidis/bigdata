@@ -30,7 +30,7 @@ trips_with_both = trips_with_pickup.join(
 )
 
 #ταξίδια που ξεκινάνε και τελειώνουν στο ίδιο borough
-# Αποφεύγουμε και τα άγνωστα/κενά
+#αποφεύγουμε και τα άγνωστα/κενά
 same_borough_trips = trips_with_both.filter(
     (col("PickupBorough") == col("DropoffBorough")) &
     (~col("PickupBorough").isin("Unknown", "N/A"))
