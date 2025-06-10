@@ -1,7 +1,7 @@
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import col
 
-spark = SparkSession.builder.appName("Q5 Zone Analysis").getOrCreate()
+spark = SparkSession.builder.appName("Q5 DF Zone Analysis").getOrCreate()
 sc = spark.sparkContext
 sc.setLogLevel("ERROR")
 user = "kkiousis"
