@@ -1,6 +1,6 @@
 from pyspark.sql import SparkSession
 
-spark = SparkSession.builder.appName("Night Trips SQL PARQ").getOrCreate()
+spark = SparkSession.builder.appName("Night Trips Q4 SQL PARQ").getOrCreate()
 sc = spark.sparkContext
 sc.setLogLevel("ERROR")
 user = "kkiousis"
